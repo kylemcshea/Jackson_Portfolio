@@ -7,6 +7,7 @@ function Home() {
       <p>
         Utilizing the pinnacle of sound libraries to tell beautiful stories
         using audio derived from some of the most famous sound libraries in the
+        <br />
         entire world. It is the combination of soundscapes, etherial synths, and
         authentic design that comes together to tell stories in a truly unique
         way.

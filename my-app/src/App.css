@@ -13,10 +13,91 @@ p {
   color: white;
 }
 .nav {
+  justify-content: center;
   color: white;
-  display: inline-block;
+  padding-bottom: 75px;
 }
-.nav a {
-  text-decoration: none;
+.nav * {
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  margin-top: 5vh;
+  float: left;
+  letter-spacing: 0;
+}
+
+.nav li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover,
+.nav li a:active {
+  letter-spacing: 3px;
+}
+
+.nav li a:after,
+.nav li a:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(white, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.nav li a:hover:after,
+.nav li a:hover:before {
+  backface-visibility: hidden;
+  border-color: white;
+  border: 1px solid white;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.nav li a:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-bottom: 75px;
+}
+.projects ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.projects li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.card-container {
+  display: flex;
+  flex-wrap: none;
+}
+.card {
+  flex: 1 0 20%;
+  padding-left: 0;
 }
